@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter and Sort Example</title>
+    <link rel="stylesheet" href="view.css">
+</head>
+<body> 
+
+    <header>
+        <h1>Product Details</h1>
+        <button href="http://127.0.0.1:5501/First/index.html" onclick="myFunction()">Back</button>
+    </header>
+
+    <section>
+        <div>
+            <label for="search">Search:</label>
+            <input type="text" id="search" placeholder="Search...">
+        </div>
+        <div>
+            <label for="filter">Filter by:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+            </select>
+        </div>
+        <div>
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="name">Name</option>
+                <option value="price">Price</option>
+            </select>
+        </div>
+    </section>
+   <section> 
+    <h1>Product List</h1>
+    <table class="productTable" border="1">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Image</th>
+                <th>Product Description</th>
+                <th>Action </th>
+            </tr>
+        </thead>
+        <tbody id="taskList">
+            
+        </tbody>
+    </table>
+</section>
+    <script>
+      function myFunction() {
+                location.replace("http://127.0.0.1:5501/First/index.html")
+            }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
